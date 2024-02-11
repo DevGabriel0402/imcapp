@@ -221,8 +221,9 @@ function App() {
   // Renderização da interface do usuário usando JSX
   return (
     <Container>
-      <div>
+      <div className='group-image'>
         <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple5/v4/fb/f8/5c/fbf85c9c-cc29-4e54-f016-5434152eb133/source/512x512bb.jpg" alt="imc icon" />
+        <div className='shadow'></div>
       </div>
       <div className='info'>
         <label>Peso <span>(ex: 76)</span></label>

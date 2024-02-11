@@ -15,6 +15,13 @@ export const Container = styled.div`
     width: 300px;
   }
 
+  .group-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   img {
     width: 145px;
     height: 145px;
@@ -37,6 +44,31 @@ export const Container = styled.div`
       }
       100% {
         transform: translatey(0px);
+      }
+    }
+  }
+
+  .shadow {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 10px #00000090;
+    animation: balancêShadow 2s linear infinite;
+
+    @keyframes balancêShadow {
+      0% {
+        box-shadow: #00000050;
+        transform: scale(1);
+      }
+
+      50% {
+        box-shadow: #000000;
+        transform: scale(1.2);
+      }
+      100% {
+        box-shadow: #00000050;
+        transform: scale(1);
       }
     }
   }
